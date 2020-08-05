@@ -29,4 +29,6 @@ if(eta < 18){
   prezzoFinale = costoPerKilometro * kilometriDaPercorrere;
 }
 
-document.getElementById('prezzo').innerHTML = prezzoFinale;
+prezzoFinale = (prezzoFinale * 100) / 100;
+
+document.getElementById('prezzo').innerHTML = prezzoFinale.toFixed(2);
